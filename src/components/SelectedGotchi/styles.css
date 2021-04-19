@@ -1,0 +1,64 @@
+.selected-gotchi-container {
+  display: grid;
+  grid-template-rows: 15% 35% 50%;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.name-container {
+  display: grid;
+  place-items: center;
+  border: 5px solid #e5df40;
+  background-color: #fffa65;
+  text-transform: uppercase;
+}
+.name-container h2 {
+  margin: 0;
+}
+
+.svg-container {
+  display: grid;
+  place-items: center;
+}
+.svg-container > svg {
+  height: 100%;
+}
+
+.svg-container .gotchi-bg {
+  display: none;
+}
+
+.traits-container {
+  padding: 0.4rem;
+  background-color: white;
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 12px;
+  column-gap: 16px;
+}
+.trait {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trait p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .selected-gotchi-container {
+    grid-template-rows: 72px 1fr 170px;
+  }
+
+  .svg-container > svg {
+    height: revert;
+    max-height: 450px;
+  }
+
+  .traits-container {
+    padding: 1.6rem;
+  }
+}
