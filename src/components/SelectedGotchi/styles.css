@@ -25,7 +25,7 @@
   height: 100%;
 }
 
-.svg-container .gotchi-bg {
+.svg-container .gotchi-bg,.wearable-bg {
   display: none;
 }
 
